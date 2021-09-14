@@ -9,12 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="https://unpkg.com/vue@next"></script>
+
     <title>Homework-1</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="img/clipart1557752.png"> <img src="img/clipart1557752.png" width="200" height="75" alt="Spider-Man Font"> </a>
+        <a class="navbar-brand" href="https://www.kissclipart.com/spider-man-the-animated-series-logo-clipart-spider-71jylw/"> <img src="img/clipart1557752.png" width="200" height="75" alt="Spider-Man Font"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,7 +78,7 @@
           </div>
           <div class="col-7">
             <h3>Related Comic Material</h3>
-            <table class="table table-hover">
+            <table id="bookTable" class="table table-hover">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -133,6 +135,11 @@
         </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="js/tablesort.min.js"></script>
+   <!-- Table plugin from http://tristen.ca/tablesort/demo/ -->
+   <script>
+      new Tablesort(document.getElementById('bookTable'));
+    </script>
 
   </body>
 </html>
